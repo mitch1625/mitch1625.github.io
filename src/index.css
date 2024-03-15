@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  display:flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 50px;
+
+}
+
+
+#aboutme , #projects, #experience, #footer{
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+
+#navbar :hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  #navbar-items {
+    display:none
+  }
+  
+}
